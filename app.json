@@ -1,0 +1,61 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 22060,
+    "appName": "久坐助手",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    },
+    "icon": "icon.png",
+    "vender": "zepp",
+    "description": "久坐提醒与健康监测应用"
+  },
+  "permissions": [
+    "data:os.device.info",
+    "device:os.local_storage",
+    "data:user.hd.calorie",
+    "data:user.hd.motion",
+    "device:os.vibrator",
+    "device:os.notification"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "4.0",
+      "target": "4.0",
+      "minVersion": "4.0"
+    }
+  },
+  "targets": {
+    "gt": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/gt/index",
+            "page/gt/statistics"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "st": "r",
+          "dw": 480
+        },
+        {
+          "st": "s",
+          "dw": 390
+        }
+      ]
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Sedentary Assistant"
+    },
+    "zh-CN": {
+      "appName": "久坐助手"
+    }
+  },
+  "defaultLanguage": "zh-CN"
+}
